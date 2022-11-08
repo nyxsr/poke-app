@@ -9,7 +9,8 @@ import Header from "./Components/Header/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <>
     <Header />
   <Router>
     {/* <App /> */}
@@ -20,7 +21,8 @@ root.render(
       </Route>
     </Routes>
   </Router>
-  </React.StrictMode>
+  </>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
