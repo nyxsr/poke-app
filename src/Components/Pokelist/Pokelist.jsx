@@ -6,9 +6,11 @@ import { motion } from "framer-motion";
 
 let baseurl = "https://pokeapi.co/api/v2/pokemon/";
 
-export default function Pokelist() {
+export default function Pokelist(props) {
   const [poke, setPoke] = useState([]);
   const [limiter, setLimiter] = useState(21)
+
+  // const searchParam = props.searchvalue
 
   const getPoke = () => {
       axios.get(`${baseurl}?offset=${limiter}&limit=21`).then((response) => {

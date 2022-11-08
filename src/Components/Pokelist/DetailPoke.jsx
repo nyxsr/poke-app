@@ -73,7 +73,7 @@ export default function DetailPoke() {
                 <p>
                   {/* Kalo ini dikomen */}
                   {desc?.length !== 0
-                    ? desc?.flavor_text_entries?.[1].flavor_text
+                    ? desc?.flavor_text_entries?.[1]?.flavor_text
                     : 'Tidak ada!'}
                   {/* Sampai sini dikomennya */}
                 </p>

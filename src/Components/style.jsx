@@ -74,6 +74,7 @@ export const DetailCard = styled.div`
     -webkit-text-stroke-color: black;
     > p span{
         font-weight: 600;
+        text-transform:capitalize;
     }
 `
 export const Button = styled(Link)`
